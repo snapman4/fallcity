@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fall City</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Fall City">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/fcico2.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#release info">Release</a></li>
+                <li><a href="castcrew.html">Cast & Crew</a></li>
+            </ul>
+    </header>
+    <div class="bg"></div>
+
+    <div class="flex-grid">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"><img src="./Images/fctrans.png" width=160%></div>
+        <div class="col"></div>
+    </div>
+    <div class="video"><iframe width="854" height="375" src="https://www.youtube.com/embed/Ztf086Wujno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+    <article>
+    <h2>Trailer coming soon... In the meantime checkout the Point B trailer:</h2>
+
+
+
+    </article>
+    <footer class="footer">
+        <div class="flex-grid">
+            <div class="col" id="social"><a href="https://www.facebook.com/fallcitymovie/" class="fa fa-facebook"></a><a href="https://twitter.com/fallcitymovie" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a></div>
+        <div class="col"></div>
+        <div class="col" id="emailInput">Want Fall City Updates?  <input type="email" id="myEmail" value="enter email here" onfocus="if (this.value == 'enter email here') {this.value=''}">
+            <button id="emailButton" onclick="getEmail()">Submit</button>
+        <p id="email"></p>
+        </div>
+        <div class="col"></div>
+        <div class="col" id="production"><img src="./Images/redCoral.png" id="redCoral" height="39px"><img src="./Images/fridayFeature.png" id="friday" height="39px"></div>
+        </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

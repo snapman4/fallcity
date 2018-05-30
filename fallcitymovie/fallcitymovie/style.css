@@ -3,25 +3,340 @@
     /*margin: 0;*/
 /*}*/
 
-/*.bg {*/
-    /*!* The image used *!*/
-    /*background-image: url("./images/background.png");*/
 
-    /*!* Full height *!*/
-    /*height: 100%;*/
-
-    /*!* Center and scale the image nicely *!*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-/*}*/
 
 html {
-    background: url("./images/background.png") no-repeat center center fixed;
+
+    background: url("./images/christmas.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
     overflow: hidden;
+    z-index: 3;
+
 }
+body {
+  margin: 0;
+  font-family: 'Droid Serif', serif;
+  background-color: transparent;
+}
+
+/* header */
+
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 10%;
+  z-index: 2;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.header li a {
+  display: block;
+  padding: 24px 24px;
+  text-decoration: none;
+  color: whitesmoke;
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: grey;
+  opacity: 0.30
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .4s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 24px 24px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .4s ease-out;
+  width: 40px;
+
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  width: 100%;
+
+}
+
+li {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.header .menu-icon .navicon:before {
+  top: 12px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -12px;
+}
+
+/* menu btn */
+
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+  max-width: 165px;
+  min-width: 90px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.material-icons {
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 65px !important;
+
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;}
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.footer {
+    background-color: lightslategray;
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 45px;
+    color: whitesmoke;
+    text-align: center;
+    opacity: .7;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    align-content: center;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    align-content: center;
+
+}
+
+div.video {
+    margin-left: 8%;
+
+}
+/*footer features*/
+div#social.col {
+    text-align: left;
+    margin-left: 8px;
+    min-width: fit-content;
+
+}
+
+a.fa.fa-facebook {
+    margin-left: 10px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+a.fa.fa-twitter {
+    margin-bottom: 3px;
+    margin-right: 6px;
+
+}
+
+a.fa.fa-instagram {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    background: #125688;
+    color: white;
+}
+
+div#emailInput.col {
+    text-align: left;
+    min-width: fit-content;
+    margin-top: 10px;
+}
+
+img#redCoral {
+    align-content: left;
+    object-fit: cover;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+img#friday {
+    align-content: left;
+    object-fit: cover;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+div#production.col {
+    text-align: right;
+    margin-left: 8px;
+    min-width: fit-content;
+
+}
+
