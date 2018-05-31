@@ -121,7 +121,7 @@ li {
 .header .menu-btn:checked ~ .menu {
   max-height: 500px;
   max-width: 165px;
-  min-width: 90px;
+  min-width: 100px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -167,7 +167,7 @@ li {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 175px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -278,10 +278,6 @@ article {
 
 }
 
-div.video {
-    margin-left: 8%;
-
-}
 /*footer features*/
 div#social.col {
     text-align: left;
@@ -310,9 +306,17 @@ a.fa.fa-instagram {
 }
 
 div#emailInput.col {
-    text-align: left;
+    text-align: center;
     min-width: fit-content;
-    margin-top: 10px;
+
+}
+
+i.fa.fa-envelope-o {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    background: #125670;
+    color: white;
+
 }
 
 img#redCoral {
@@ -340,3 +344,41 @@ div#production.col {
 
 }
 
+
+/*trailer text box*/
+
+.square{
+    width: 100%;
+    height: 25px;
+    Background-color: lightslategray;
+    opacity: .7;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    align-content: center;
+    color: whitesmoke;
+
+
+}
+
+h2#trailertext {
+    text-align: center;
+}
+
+div.video {
+    margin-left: 20%;
+    position: relative;
+    padding-top: 10px; height: 0; overflow: hidden;
+    padding-bottom: 55%;
+}
+
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 60%;
+height: 40%;
+
+}

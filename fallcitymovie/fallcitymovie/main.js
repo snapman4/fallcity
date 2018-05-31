@@ -4,3 +4,4 @@ function getEmail() {
 }
 
 console.log(getEmail())
+
