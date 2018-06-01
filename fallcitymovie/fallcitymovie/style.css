@@ -237,7 +237,7 @@ html, body {
 }
 
 article {
-    min-height: 100%;
+    min-height: 65%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
@@ -381,4 +381,86 @@ left: 0;
 width: 60%;
 height: 40%;
 
+}
+
+/*images page*/
+
+div.slideshow {
+    box-sizing: border-box;
+    z-index: 3;
+
+}
+
+
+.slideshow {
+    max-width: 650px;
+    min-width: 75px;
+    position: relative;
+    margin: auto;
+
+}
+
+.fcimages {
+    display: none;
+
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.previous:hover, .next:hover {
+    background-color: lightslategray;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+    background-color: lightgrey;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: pics ;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
