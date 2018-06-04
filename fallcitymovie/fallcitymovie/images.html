@@ -18,7 +18,7 @@
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="trailer.html">Trailer</a></li>
-                <li><a href="story.html">Story</a></li>
+                <li><a href="story.html">About</a></li>
                 <li><a href="images.html">Images</a></li>
                 <li><a href="email.html">Release</a></li>
                 <li><a href="castcrew.html">Cast & Crew</a></li>
@@ -37,8 +37,9 @@
         <div class="col"></div>
     </div>
     <article>
-        <div class="slideshow">
-            <div class="fcimages">
+
+        <div class="slideshow fade">
+            <div class="fcimages defaultpic">
                 <img src="./Images/fcstills/fc01.png" style="width:100%">
             </div>
             <div class="fcimages">
@@ -79,25 +80,12 @@
             </div><div class="fcimages">
                 <img src="./Images/fcstills/fc14.png" style="width:100%">
             </div>
-            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="previous" id="previous">&#10094;</a>
+            <a class="next" id="next">&#10095;</a>
         </div>
 
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-            <span class="dot" onclick="currentSlide(11)"></span>
-            <span class="dot" onclick="currentSlide(12)"></span>
-            <span class="dot" onclick="currentSlide(13)"></span>
-            <span class="dot" onclick="currentSlide(14)"></span>
+        <div id='controlDots' style="text-align: center">
+
         </div>
 
 
