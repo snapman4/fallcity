@@ -53,7 +53,7 @@ for (let i = 0; i < images.length; i++) {
 
 
 document.querySelector('#next').addEventListener('click', function () {
-    console.log(slideIndex);
+    // console.log(slideIndex);
     let next;
     if (slideIndex + 1 > images.length - 1) {
         next = 0
@@ -76,3 +76,4 @@ document.querySelector('#previous').addEventListener('click', function () {
     images[prev].classList.add("defaultpic");
     slideIndex = prev;
 });
+

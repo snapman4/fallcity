@@ -4,9 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Images/fcico2.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="cast">
 
     <header class="header">
         <input class="menu-btn" type="checkbox" id="menu-btn"/>
@@ -17,7 +18,7 @@
                 <li><a href="story.html">About</a></li>
                 <li><a href="images.html">Images</a></li>
                 <li><a href="email.html">Release</a></li>
-                <li><a href="castcrew.html">Cast & Crew</a></li>
+                <li><a href="castcrew.html">Cast</a></li>
             </ul>
     </header>
     <div class="bg"></div>
@@ -32,26 +33,83 @@
         <div class="col"><img src="./Images/fctrans.png" width=160%></div>
         <div class="col"></div>
     </div>
-    <article>
-    <div class="flex-grid" id="cast">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-    <div class="flex-grid" id="cast">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-    <div class="flex-grid" id="cast">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
+    <article id="castId">
+        <div class="container cast">
+            <div class="castPics">
+                <div class="charName">1 / 8</div>
+                    <img src="./Images/cast/dashiell.jpg" style="width:100%">
+            </div>
 
+            <div class="castPics">
+                <div class="charName">2 / 8</div>
+                    <img src="./Images/cast/meranda.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <div class="charName">3 / 8</div>
+                    <img src="./Images/cast/riley.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <div class="charName">4 / 8</div>
+                    <img src="./Images/cast/carrie.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <div class="charName">5 / 8</div>
+                    <img src="./Images/cast/paul.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <div class="charName">6 / 8</div>
+                    <img src="./Images/cast/brace.png" style="width:100%">
+            </div>
+            <div class="castPics">
+                <div class="charName">7 / 7</div>
+                    <img src="./Images/cast/tim.png" style="width:100%">
+             </div>
+            <div class="castPics">
+                <div class="charName">8 / 8</div>
+                    <img src="./Images/cast/scott.jpg" style="width:100%">
+            </div>
+
+            <!-- arrow buttons -->
+            <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/dashiell.png" style="width:100%" onclick="currentSlide(1)" alt="Dashiell">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/meranda.png" style="width:100%" onclick="currentSlide(2)" alt="Meranda">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/riley.png" style="width:100%" onclick="currentSlide(3)" alt="Riley">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/carrie.png" style="width:100%" onclick="currentSlide(4)" alt="Carrie">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/paul.png" style="width:100%" onclick="currentSlide(5)" alt="Paul">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/brace.png" style="width:100%" onclick="currentSlide(6)" alt="Brace">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/tim.png" style="width:100%" onclick="currentSlide(7)" alt="Tim">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/cast/scott.jpg" style="width:100%" onclick="currentSlide(8)" alt="Scott">
+            </div>
+        </div>
+     </div>
 
     </article>
     <footer class="footer">
@@ -65,6 +123,6 @@
     </footer>
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
+<script src="cast.js"></script>
 </body>
 </html>
