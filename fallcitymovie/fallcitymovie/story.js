@@ -10,7 +10,7 @@ let txt = 'Feeling like life has taken everything from him, recently-paroled thi
     '            away. Even worse, Jon intercepts a letter from Olivia and discovers her Christmas wish is to have her ex\n' +
     '            come home. Suddenly, with everything taken from him again, Jon has to decide how much he\'s willing to\n' +
     '            sacrifice to give Olivia what she wants or if he will fight to take back the happy life he finally found.';
-let speed = 40;
+let speed = 30;
 
 function textType() {
     if (t < txt.length) {
