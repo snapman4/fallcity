@@ -1,0 +1,121 @@
+<title>Fall City</title>
+    <link rel="stylesheet" href="../../static/blog/style.css">
+    <meta name="author" content="Fall City">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="shortcut icon" href={% static 'blog/fcico2.ico' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="cast">
+
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trailer.html">Trailer</a></li>
+                <li><a href="story.html">About</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="email.html">Release</a></li>
+                <li><a href="castcrew.html">Cast</a></li>
+            </ul>
+    </header>
+    <div class="bg"></div>
+
+
+
+
+
+    <div class="flex-grid cast">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"><img src="../../static/Images/fctrans.png" width=160%></div>
+        <div class="col"></div>
+    </div>
+    <article id="castId">
+        <div class="container cast">
+            <div class="castPics">
+                <img src="../../static/blog/dashiell.jpg" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/meranda.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/riley.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/carrie2.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/paul.png" style="width:100%">
+            </div>
+
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/brace.png" style="width:100%">
+            </div>
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/tim.png" style="width:100%">
+            </div>
+            <div class="castPics">
+                <img src="../templates/blog/Images/castphotos/scott.jpg" style="width:100%">
+            </div>
+
+            <!-- arrow buttons -->
+            <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/dashiell.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jon - Dashiell Wolf">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/meranda.png" style="width:100%" onclick="currentSlide(2)" alt="Olivia - Meranda Long">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/riley.png" style="width:100%" onclick="currentSlide(3)" alt="Adiel - Riley Hardy">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/carrie2.png" style="width:100%" onclick="currentSlide(4)" alt="Mom - Carrie Wrigley">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/paul.png" style="width:100%" onclick="currentSlide(5)" alt="Derek - Paul Hobson">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/brace.png" style="width:100%" onclick="currentSlide(6)" alt="Eugene - Brace Evans">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/tim.png" style="width:100%" onclick="currentSlide(7)" alt="Dad - Tim Threlfall">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../templates/blog/Images/castphotos/scott.jpg" style="width:100%" onclick="currentSlide(8)" alt="Adam - Scott Christopher">
+            </div>
+        </div>
+     </div>
+
+    </article>
+    <footer class="footer">
+        <div class="flex-grid">
+            <div class="col" id="social"><a href="https://www.facebook.com/fallcitymovie/" class="fa fa-facebook"></a><a href="https://twitter.com/fallcitymovie" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a></div>
+            <div class="col hidden-xs hidden-sm"></div>
+            <div class="col" id="emailInput"><a href="email.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+            <div class="col hidden-xs hidden-sm"></div>
+            <div class="col" id="production"><img src="../templates/blog/Images/redCoral.png" id="redCoral" height="39px"><img src="../templates/blog/Images/fridayFeature.png" id="friday" height="39px"></div>
+        </div>
+    </footer>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="cast.js"></script>
+</body>
+</html>

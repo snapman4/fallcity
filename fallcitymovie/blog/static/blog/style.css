@@ -1,0 +1,617 @@
+/*body, html {*/
+    /*height: 100%;*/
+    /*margin: 0;*/
+/*}*/
+
+
+
+html {
+
+    background: url("../Images/christmas.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+
+}
+body {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  background-color: transparent;
+}
+
+/* header */
+
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 10%;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: whitesmoke;
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: grey;
+  opacity: 0.30
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .4s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 24px 24px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .4s ease-out;
+  width: 40px;
+
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  width: 100%;
+
+}
+
+li {
+    font-size: 24px;
+    color: whitesmoke;
+}
+.header {
+    z-index: 999;
+}
+.header .menu-icon .navicon:before {
+  top: 12px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -12px;
+}
+
+/* menu btn */
+
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+  max-width: 165px;
+  min-width: 100px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.material-icons {
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 65px !important;
+
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+}
+
+/* dropdown positioning */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 175px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;}
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    min-height: 65%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.footer {
+    background-color: lightslategray;
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 45px;
+    color: whitesmoke;
+    text-align: center;
+    opacity: .7;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    align-content: center;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    align-content: center;
+
+}
+
+/*footer features*/
+div#social.col {
+    text-align: left;
+    margin-left: 8px;
+    min-width: fit-content;
+
+}
+
+a.fa.fa-facebook {
+    margin-left: 10px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+a.fa.fa-twitter {
+    margin-bottom: 3px;
+    margin-right: 6px;
+
+}
+
+a.fa.fa-instagram {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    background: #125688;
+    color: white;
+}
+
+div#emailInput.col {
+    text-align: center;
+    min-width: fit-content;
+
+}
+
+i.fa.fa-envelope-o {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    background: #125670;
+    color: white;
+
+}
+
+img#redCoral {
+    align-content: left;
+    object-fit: cover;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+img#friday {
+    align-content: left;
+    object-fit: cover;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+div#production.col {
+    text-align: right;
+    margin-left: 8px;
+    min-width: fit-content;
+
+}
+
+
+/*trailer text box*/
+
+.square{
+    width: 100%;
+    height: 25px;
+    Background-color: lightslategray;
+    opacity: .7;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    align-content: center;
+    color: whitesmoke;
+
+
+}
+
+h2#trailertext {
+    text-align: center;
+}
+
+div.video {
+    margin-left: 20%;
+    position: relative;
+    padding-top: 10px; height: 0; overflow: hidden;
+    padding-bottom: 55%;
+
+}
+
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 60%;
+height: 40%;
+
+}
+
+/*images page*/
+
+div.slideshow {
+    box-sizing: border-box;
+    z-index: 3;
+
+}
+
+
+.slideshow {
+    max-width: 650px;
+    min-width: 75px;
+    position: relative;
+    margin: auto;
+
+}
+
+.fcimages {
+    display: none;
+
+
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.previous:hover, .next:hover {
+    background-color: lightslategray;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.dot:active, .dot:hover {
+    background-color: lightgrey;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: pics ;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+    
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.defaultpic {
+    display: block;
+
+}
+
+/*about/story page*/
+
+
+.storyText {
+
+    font-family: 'Amatic SC', cursive;
+    background-color: #ece0ec;
+    opacity: .6;
+    margin-left: 40%;
+    border-radius: 4%;
+    max-width: 600px;
+    min-width: 350px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    color: black;
+}
+
+/*cast page*/
+
+article#castId {
+  box-sizing: border-box;
+  max-width: 290px;
+  min-width: 75px;
+  max-height: 290px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.castPics {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #000000;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* eight columns side by side */
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.demo.cursor {
+    max-height: 31.25px;
+}
+
+div.flex-grid.cast {
+    margin: 0 0 -5px 0;
+
+}
+
+div.flex-grid.story {
+    margin: 0 0 3px 0;
+}
+
+/*release/email page*/
+
+div#releaseContainer {
+
+    font-family: 'Amatic SC', cursive;
+    background-color: #ece0ec;
+    opacity: .6;
+    margin-left: 40%;
+    border-radius: 4%;
+    max-width: 600px;
+    min-width: 350px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    color: black;
+}
+
+div#emailBox {
+    font-family: 'Amatic SC', cursive;
+    margin-top: -25px;
+}
+
+h2#comingSoon {
+    font-size: 48px;
+}

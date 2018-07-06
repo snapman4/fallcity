@@ -17,6 +17,14 @@ html {
     z-index: 3;
 
 }
+
+@media (max-width: 350px) {
+    html {
+        background: url("./images/christmasmobile3.jpg") no-repeat center center fixed;
+        background-color: lightslategray;
+        height: 100%;
+    }
+}
 body {
   margin: 0;
   font-family: 'Amatic SC', cursive;
@@ -214,13 +222,13 @@ li {
   width: 32%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .flex-grid,
   .flex-grid-thirds {
     display: block;}
     .col {
       width: 100%;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
     }
   }
 
@@ -331,6 +339,7 @@ img#redCoral {
     margin-bottom: 3px;
 
 }
+
 
 img#friday {
     align-content: left;
@@ -463,7 +472,7 @@ div.slideshow {
 @-webkit-keyframes fade {
     from {opacity: .5}
     to {opacity: 1}
-    
+
 }
 
 @keyframes fade {
@@ -493,6 +502,12 @@ div.slideshow {
     font-size: 24px;
     padding: 10px;
     color: black;
+}
+@media (max-width: 450px) {
+    .storyText {
+        font-size: 20px;
+        margin-left: -5px;
+    }
 }
 
 /*cast page*/
